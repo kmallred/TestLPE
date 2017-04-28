@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+ <test name="LPEChrome">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="Testing.LPEFormSubmission">
+			</class>
+		</classes>
+	</test>
+	 <test name="LPEIE">
+		<parameter name="browser" value="ie"></parameter>
+		<classes>
+			<class name="Testing.LPEFormSubmission">
+			</class>
+		</classes>
+	</test>
+	 <test name="LPEFF">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="Testing.LPEFormSubmission">
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

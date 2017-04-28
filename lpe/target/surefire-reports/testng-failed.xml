@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="LPEChrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Testing.LPEFormSubmission">
+        <methods>
+          <include name="lpeFormSubmit" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Testing.LPEFormSubmission -->
+    </classes>
+  </test> <!-- LPEChrome(failed) -->
+  <test name="LPEIE(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Testing.LPEFormSubmission">
+        <methods>
+          <include name="lpeFormSubmit" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Testing.LPEFormSubmission -->
+    </classes>
+  </test> <!-- LPEIE(failed) -->
+  <test name="LPEFF(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Testing.LPEFormSubmission">
+        <methods>
+          <include name="lpeFormSubmit"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Testing.LPEFormSubmission -->
+    </classes>
+  </test> <!-- LPEFF(failed) -->
+</suite> <!-- Failed suite [Suite] -->

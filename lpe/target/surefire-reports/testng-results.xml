@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49639" started-at="2017-04-27T19:45:27Z" finished-at="2017-04-27T19:46:17Z">
+    <groups>
+    </groups>
+    <test name="LPEChrome" duration-ms="5727" started-at="2017-04-27T19:45:27Z" finished-at="2017-04-27T19:45:33Z">
+      <class name="Testing.LPEFormSubmission">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@90f6bfd]" name="setup" is-config="true" duration-ms="4607" started-at="2017-04-27T15:45:27Z" finished-at="2017-04-27T15:45:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="lpeFormSubmit(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@90f6bfd]" name="lpeFormSubmit" duration-ms="1" started-at="2017-04-27T15:45:32Z" finished-at="2017-04-27T15:45:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[config.properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: config.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at Testing.LPEFormSubmission.loadPropertyFile(LPEFormSubmission.java:247)
+	at Testing.LPEFormSubmission.lpeFormSubmit(LPEFormSubmission.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpeFormSubmit -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Testing.LPEFormSubmission@90f6bfd]" name="closeBrowser" is-config="true" duration-ms="1106" started-at="2017-04-27T15:45:32Z" finished-at="2017-04-27T15:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Testing.LPEFormSubmission -->
+    </test> <!-- LPEChrome -->
+    <test name="LPEIE" duration-ms="12584" started-at="2017-04-27T19:45:27Z" finished-at="2017-04-27T19:45:40Z">
+      <class name="Testing.LPEFormSubmission">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@61a485d2]" name="setup" is-config="true" duration-ms="11569" started-at="2017-04-27T15:45:27Z" finished-at="2017-04-27T15:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="lpeFormSubmit(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@61a485d2]" name="lpeFormSubmit" duration-ms="1" started-at="2017-04-27T15:45:39Z" finished-at="2017-04-27T15:45:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[config.properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: config.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at Testing.LPEFormSubmission.loadPropertyFile(LPEFormSubmission.java:247)
+	at Testing.LPEFormSubmission.lpeFormSubmit(LPEFormSubmission.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpeFormSubmit -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Testing.LPEFormSubmission@61a485d2]" name="closeBrowser" is-config="true" duration-ms="1013" started-at="2017-04-27T15:45:39Z" finished-at="2017-04-27T15:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Testing.LPEFormSubmission -->
+    </test> <!-- LPEIE -->
+    <test name="LPEFF" duration-ms="49639" started-at="2017-04-27T19:45:27Z" finished-at="2017-04-27T19:46:17Z">
+      <class name="Testing.LPEFormSubmission">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@b97c004]" name="setup" is-config="true" duration-ms="0" started-at="2017-04-27T15:45:27Z" finished-at="2017-04-27T15:45:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+witt.com.xpi
+1493322332634	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1493322332643	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332644	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332647	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1493322332653	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\KMALLE~1\AppData\Local\Temp\anonymous9209725634266732735webdriver-profile\extensions.json
+1493322332654	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332654	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332656	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1493322332658	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1493322332658	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Starting provider: GMPProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1493322332665	addons.manager	DEBUG	Starting provider: PluginProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1493322332666	addons.manager	DEBUG	Completed startup sequence
+1493322332899	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1493322332900	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1493322332902	addons.xpi-utils	DEBUG	Successfully read XPI database
+1493322332914	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1493322332999	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1493322356305	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1493322356307	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.14
+1493322356308	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1493322356475	addons.manager	DEBUG	shutdown
+1493322356475	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1493322356476	addons.xpi	DEBUG	shutdown
+1493322356476	addons.xpi-utils	DEBUG	shutdown
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1493322356478	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1493322356479	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1493322356480	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1493322356482	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1493322356486	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'NEX-KMA-5G0PNX1', ip: '192.168.9.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+witt.com.xpi
+1493322332634	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1493322332643	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332644	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332647	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1493322332653	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\KMALLE~1\AppData\Local\Temp\anonymous9209725634266732735webdriver-profile\extensions.json
+1493322332654	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332654	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332656	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1493322332658	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1493322332658	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Starting provider: GMPProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1493322332665	addons.manager	DEBUG	Starting provider: PluginProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1493322332666	addons.manager	DEBUG	Completed startup sequence
+1493322332899	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1493322332900	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1493322332902	addons.xpi-utils	DEBUG	Successfully read XPI database
+1493322332914	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1493322332999	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1493322356305	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1493322356307	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.14
+1493322356308	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1493322356475	addons.manager	DEBUG	shutdown
+1493322356475	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1493322356476	addons.xpi	DEBUG	shutdown
+1493322356476	addons.xpi-utils	DEBUG	shutdown
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1493322356478	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1493322356479	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1493322356480	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1493322356482	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1493322356486	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'NEX-KMA-5G0PNX1', ip: '192.168.9.28', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at Testing.LPEFormSubmission.setup(LPEFormSubmission.java:233)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+witt.com.xpi
+1493322332634	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1493322332643	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332644	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332647	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1493322332653	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\KMALLE~1\AppData\Local\Temp\anonymous9209725634266732735webdriver-profile\extensions.json
+1493322332654	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332654	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332656	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1493322332658	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1493322332658	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Starting provider: GMPProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1493322332665	addons.manager	DEBUG	Starting provider: PluginProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1493322332666	addons.manager	DEBUG	Completed startup sequence
+1493322332899	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1493322332900	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1493322332902	addons.xpi-utils	DEBUG	Successfully read XPI database
+1493322332914	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1493322332914	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1493322332999	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1493322356305	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1493322356307	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.14
+1493322356308	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1493322356475	addons.manager	DEBUG	shutdown
+1493322356475	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1493322356476	addons.xpi	DEBUG	shutdown
+1493322356476	addons.xpi-utils	DEBUG	shutdown
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1493322356478	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1493322356479	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1493322356480	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1493322356482	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1493322356486	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:Testing.LPEFormSubmission@b97c004]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-04-27T15:46:17Z" finished-at="2017-04-27T15:46:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="lpeFormSubmit(java.lang.String)[pri:0, instance:Testing.LPEFormSubmission@b97c004]" name="lpeFormSubmit" duration-ms="0" started-at="2017-04-27T15:46:17Z" finished-at="2017-04-27T15:46:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpeFormSubmit -->
+      </class> <!-- Testing.LPEFormSubmission -->
+    </test> <!-- LPEFF -->
+  </suite> <!-- Suite -->
+</testng-results>

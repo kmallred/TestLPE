@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">LPEChrome</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">5.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">LPEIE</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">12.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LPEFF</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">49.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">49.6 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">LPEChrome &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Testing.LPEFormSubmission</td><td><a href="#m1"><b>lpeFormSubmit</b>  </a></td><td class="numi">1</td><td>1493322332497</td><td class="numi">1</td></tr>
+<tr><th colspan="4">LPEIE &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Testing.LPEFormSubmission</td><td><a href="#m2"><b>lpeFormSubmit</b>  </a></td><td class="numi">1</td><td>1493322339453</td><td class="numi">1</td></tr>
+<tr><th colspan="4">LPEFF &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">Testing.LPEFormSubmission</td><td><a href="#m3"><b>setup</b>  </a></td><td class="numi">1</td><td>1493322327884</td><td class="numi">0</td></tr>
+<tr><th colspan="4">LPEFF &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">Testing.LPEFormSubmission</td><td><a href="#m4"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1493322377522</td><td class="numi">0</td></tr>
+<tr><th colspan="4">LPEFF &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">Testing.LPEFormSubmission</td><td><a href="#m5"><b>lpeFormSubmit</b>  </a></td><td class="numi">1</td><td>1493322377522</td><td class="numi">0</td></tr>
+</table>
+<h1>LPEChrome</h1>
+<h2 id="m1">Testing.LPEFormSubmission:lpeFormSubmit</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Chrome</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>config.properties (The system cannot find the file specified)</p>
+java.io.FileInputStream.open0(Native Method)
+<br/>at java.io.FileInputStream.open(FileInputStream.java:195)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+<br/>at Testing.LPEFormSubmission.loadPropertyFile(LPEFormSubmission.java:247)
+<br/>at Testing.LPEFormSubmission.lpeFormSubmit(LPEFormSubmission.java:50)
+<br/>21 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LPEIE</h1>
+<h2 id="m2">Testing.LPEFormSubmission:lpeFormSubmit</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>ie</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>config.properties (The system cannot find the file specified)</p>
+java.io.FileInputStream.open0(Native Method)
+<br/>at java.io.FileInputStream.open(FileInputStream.java:195)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+<br/>at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+<br/>at Testing.LPEFormSubmission.loadPropertyFile(LPEFormSubmission.java:247)
+<br/>at Testing.LPEFormSubmission.lpeFormSubmit(LPEFormSubmission.java:50)
+<br/>21 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LPEFF</h1>
+<h2 id="m3">Testing.LPEFormSubmission:setup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Firefox</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+witt.com.xpi
+1493322332634	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1493322332643	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332644	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332647	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1493322332653	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\KMALLE~1\AppData\Local\Temp\anonymous9209725634266732735webdriver-profile\extensions.json
+1493322332654	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332654	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332656	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1493322332658	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1493322332658	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Starting provider: GMPProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1493322332665	addons.manager	DEBUG	Starting provider: PluginProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1493322332666	addons.manager	DEBUG	Completed startup sequence
+1493322332899	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1493322332900	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1493322332902	addons.xpi-utils	DEBUG	Successfully read XPI database
+1493322332914	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1493322332914	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1493322332914	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1493322332999	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1493322356305	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1493322356307	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.14
+1493322356308	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1493322356475	addons.manager	DEBUG	shutdown
+1493322356475	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1493322356476	addons.xpi	DEBUG	shutdown
+1493322356476	addons.xpi-utils	DEBUG	shutdown
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1493322356478	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1493322356479	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1493322356480	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1493322356482	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1493322356486	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;NEX-KMA-5G0PNX1&apos;, ip: &apos;192.168.9.28&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+<br/>at Testing.LPEFormSubmission.setup(LPEFormSubmission.java:233)
+<br/>19 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+witt.com.xpi
+1493322332634	addons.xpi	DEBUG	Calling bootstrap method startup on firebug@software.joehewitt.com version 2.0.19
+1493322332643	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332644	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1493322332647	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1493322332653	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\KMALLE~1\AppData\Local\Temp\anonymous9209725634266732735webdriver-profile\extensions.json
+1493322332654	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332654	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1493322332656	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1493322332658	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1493322332658	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1493322332658	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1493322332659	addons.manager	DEBUG	Starting provider: GMPProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1493322332665	addons.manager	DEBUG	Starting provider: PluginProvider
+1493322332665	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1493322332665	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1493322332666	addons.manager	DEBUG	Completed startup sequence
+1493322332899	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1493322332900	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1493322332902	addons.xpi-utils	DEBUG	Successfully read XPI database
+1493322332914	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1493322332914	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1493322332914	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1493322332999	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1493322332999	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1493322356305	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1493322356306	addons.xpi	DEBUG	Calling bootstrap method shutdown on firebug@software.joehewitt.com version 2.0.19
+1493322356307	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.14
+1493322356308	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1493322356475	addons.manager	DEBUG	shutdown
+1493322356475	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1493322356476	addons.xpi	DEBUG	shutdown
+1493322356476	addons.xpi-utils	DEBUG	shutdown
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1493322356476	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1493322356478	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1493322356479	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1493322356480	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1493322356482	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1493322356486	addons.manager	DEBUG	Async provider shutdown done
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+<br/>at Testing.LPEFormSubmission.setup(LPEFormSubmission.java:233)
+<br/>19 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Testing.LPEFormSubmission:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Testing.LPEFormSubmission:lpeFormSubmit</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Firefox</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
